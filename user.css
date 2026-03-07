@@ -1,0 +1,261 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+.desktop {
+  position: relative;
+  width: 1280px;
+  height: 1080px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.desktop .rectangle {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 6px);
+  top: 6px;
+  left: 0;
+  object-fit: cover;
+}
+
+.desktop .group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 652px;
+  height: 145px;
+  background-color: #d9d9d9;
+}
+
+.desktop .div {
+  position: absolute;
+  top: 417px;
+  left: 32px;
+  width: 345px;
+  height: 387px;
+}
+
+
+.desktop .vector {
+  position: absolute;
+  width: 49.90%;
+  height: 73.54%;
+  top: 26.46%;
+  left: 50.10%;
+}
+
+.desktop .img {
+  position: absolute;
+  width: 49.90%;
+  height: 85.26%;
+  top: 14.74%;
+  left: 50.10%;
+}
+
+.desktop .vector-2 {
+  position: absolute;
+  width: 58.88%;
+  height: 23.73%;
+  top: 76.27%;
+  left: 41.12%;
+}
+
+.desktop .vector-3 {
+  position: absolute;
+  width: 38.38%;
+  height: 41.30%;
+  top: 58.70%;
+  left: 61.62%;
+}
+
+.desktop .vector-4 {
+  position: absolute;
+  width: 67.68%;
+  height: 41.30%;
+  top: 58.70%;
+  left: 32.32%;
+}
+
+.desktop .rectangle-2 {
+  position: absolute;
+  top: calc(50.00% - 194px);
+  left: 0;
+  width: 343px;
+  height: 387px;
+  border-radius: 56px;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 1, 9, 0.85) 8%,
+    rgba(5, 1, 9, 0.85) 21%,
+    rgba(5, 1, 9, 0.47) 54%
+  );
+}
+
+.desktop .rectangle-3 {
+  position: absolute;
+  top: 247px;
+  left: 21px;
+  width: 301px;
+  height: 85px;
+  background-color: #d9d9d9;
+  border-radius: 131px;
+}
+
+.desktop .text-wrapper {
+  left: 52px;
+  width: 277px;
+  position: absolute;
+  top: 259px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #100909;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .group-2 {
+  position: absolute;
+  top: calc(50.00% - 123px);
+  left: 444px;
+  width: 390px;
+  height: 387px;
+}
+
+.desktop .rectangle-4 {
+  left: 0;
+  width: 358px;
+  position: absolute;
+  top: calc(50.00% - 194px);
+  height: 387px;
+  border-radius: 56px;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 1, 9, 0.85) 8%,
+    rgba(5, 1, 9, 0.85) 15%,
+    rgba(5, 1, 9, 0.47) 63%
+  );
+}
+
+.desktop .rectangle-5 {
+  left: 12px;
+  width: 336px;
+  position: absolute;
+  top: 247px;
+  height: 85px;
+  background-color: #d9d9d9;
+  border-radius: 131px;
+}
+
+.desktop .text-wrapper-2 {
+  left: 17px;
+  width: 371px;
+  white-space: nowrap;
+  position: absolute;
+  top: 259px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #100909;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .group-3 {
+  position: absolute;
+  top: calc(50.00% - 123px);
+  right: 40px;
+  width: 375px;
+  height: 387px;
+}
+
+.desktop .rectangle-6 {
+  right: 2px;
+  width: 373px;
+  position: absolute;
+  top: calc(50.00% - 194px);
+  height: 387px;
+  border-radius: 56px;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 1, 9, 0.85) 8%,
+    rgba(5, 1, 9, 0.85) 15%,
+    rgba(5, 1, 9, 0.47) 63%
+  );
+}
+
+.desktop .rectangle-7 {
+  right: 17px;
+  width: 351px;
+  position: absolute;
+  top: 247px;
+  height: 85px;
+  background-color: #d9d9d9;
+  border-radius: 131px;
+}
+
+.desktop .text-wrapper-3 {
+  position: absolute;
+  top: 259px;
+  right: 34px;
+  width: 329px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #100909;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .vector-5 {
+    position: absolute;
+    width: 150px;
+    top: 482px;
+    left: 970px;
+    object-fit: cover;
+}
+
+.desktop .wkqmj {
+    position: absolute;
+    top: calc(50.00% - 109px);
+    left: 482px;
+    width: 270px;
+    height: 200px;
+}
+
+.desktop .text-wrapper-4 {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  font-family: "Inter-Italic", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000d9;
+  font-size: 128px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.desktop .chatbot-logog {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    width: 270px;
+    height: 200px;
+    background-image: url(./img/image.svg);
+    background-size: 100% 100%;
+}

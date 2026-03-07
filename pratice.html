@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>juri</title>
+<link rel="stylesheet" href="stye.css">
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        Legal Ease Assistant
+    </div>
+
+    <div class="chat-box">
+        <div class="bot-message">
+            Hello! How can I help you with legal information today?
+        </div>
+
+        <div class="user-message">
+            How can I file an online FIR?
+        </div>
+
+        <div class="answer">
+          
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input id = "question" type="text" placeholder="Type your message...">
+        <button onclick ="ko()">Send</button>
+    </div>
+
+</div>
+
+</body>
+</html>
+<script>
+function ko(){
+
+const q = document.getElementById("question").value.toLowerCase();
+const ans = document.querySelector(".answer");
+
+let found = false;
+
+for(let i=0;i<qa.length;i++){
+
+    for(let j=0;j<qa[i].keywords.length;j++){
+
+        if(q.includes(qa[i].keywords[j])){
+            ans.innerText = qa[i].answer;
+            found = true;
+            break;
+        }
+
+    }
+
+    if(found) break;
+}
+
+if(!found){
+ans.innerText="Answer not found";
+}
+
+}
+
+    
+const qa = [
+
+{
+keywords:["How can I file an FIR?"],
+answer:"You can file an FIR at the nearest police station or through your state police online portal."
+},
+
+{
+keywords:["What is an FIR in India?"],
+answer:"FIR stands for First Information Report. It is the first document prepared by police when information about a cognizable offence is received."
+},
+
+{
+keywords:["Can police refuse to file an FIR?"],
+answer:"Police generally cannot refuse to register an FIR for cognizable offences."
+},
+
+{
+keywords:["Where can I report cyber crime in India?"],
+answer:"Cyber crimes can be reported at the National Cyber Crime Portal https://cybercrime.gov.in or by calling helpline 1930."
+},
+
+{
+keywords:["How do I report online fraud?"],
+answer:"Online fraud can be reported at the cyber crime portal or by calling 1930 immediately."
+},
+
+{
+keywords:["What is cyber bullying?"],
+answer:"Cyber bullying refers to harassment or bullying using digital platforms such as social media or messaging services."
+},
+
+{
+keywords:["What are consumer rights in India?"],
+answer:"Consumers have the right to safety, information, choice, and grievance redressal."
+},
+
+{
+keywords:["How can I file a consumer complaint?"],
+answer:"You can file a consumer complaint through the e-daakhil portal or your local consumer commission."
+},
+
+{
+keywords:["What should I do if I receive a defective product?"],
+answer:"You can request replacement, refund, or file a complaint with the consumer commission."
+},
+
+{
+keywords:["What is legal aid?"],
+answer:"Legal aid provides free legal services to people who cannot afford a lawyer."
+},
+
+{
+keywords:["Who is eligible for free legal aid?"],
+answer:"Free legal aid is available to economically weaker sections and certain protected groups under the Legal Services Authorities Act."
+},
+
+{
+keywords:["What is RTI?"],
+answer:"RTI stands for Right to Information and allows citizens to request information from government authorities."
+},
+
+{
+keywords:["How do I file an RTI application?"],
+answer:"RTI applications can be filed online through the RTI portal or submitted to the Public Information Officer."
+},
+
+{
+keywords:["What is domestic violence law in India?"],
+answer:"Domestic violence complaints can be filed under the Protection of Women from Domestic Violence Act 2005."
+},
+
+{
+keywords:["What should I do if I face domestic abuse?"],
+answer:"Victims can file a complaint with police, protection officers, or seek help from women helplines."
+},
+
+{
+keywords:["What is the legal age of marriage in India?"],
+answer:"The legal age of marriage is 21 for men and 18 for women."
+},
+
+{
+keywords:["How can I register my marriage?"],
+answer:"Marriage can be registered at the local registrar office under the Hindu Marriage Act or Special Marriage Act."
+},
+
+{
+keywords:["What is the divorce process in India?"],
+answer:"Divorce petitions are filed in family courts under personal laws such as the Hindu Marriage Act."
+},
+
+{
+keywords:["What is dowry harassment law?"],
+answer:"Dowry harassment can be reported under Section 498A of the Indian Penal Code."
+},
+
+{
+keywords:["What is sexual harassment at workplace?"],
+answer:"Workplace harassment complaints can be filed under the POSH Act."
+},
+
+{
+keywords:["What is the POCSO Act?"],
+answer:"The POCSO Act protects children below 18 years from sexual abuse and exploitation."
+},
+
+{
+keywords:["How can I report child abuse in India?"],
+answer:"Child abuse can be reported by calling Childline 1098 or informing the nearest police station."
+},
+
+{
+keywords:["What is the punishment for rape in India?"],
+answer:"Rape is punishable under Section 376 of the Indian Penal Code."
+},
+
+{
+keywords:["What is the Indian Penal Code?"],
+answer:"The Indian Penal Code defines criminal offences and punishments in India."
+},
+
+{
+keywords:["What is the Constitution of India?"],
+answer:"The Constitution of India is the supreme law that governs the country."
+},
+
+{
+keywords:["What are Fundamental Rights?"],
+answer:"Fundamental Rights are basic freedoms guaranteed under Part III of the Constitution."
+},
+
+{
+keywords:["What is Article 14 of the Constitution?"],
+answer:"Article 14 ensures equality before the law and equal protection of laws."
+},
+
+{
+keywords:["What does Article 19 guarantee?"],
+answer:"Article 19 guarantees freedoms such as speech, expression, movement, and association."
+},
+
+{
+keywords:["What is Article 21?"],
+answer:"Article 21 guarantees the right to life and personal liberty."
+},
+
+{
+keywords:["What is Article 21A?"],
+answer:"Article 21A provides the right to free and compulsory education for children aged 6-14."
+},
+
+{
+keywords:["What is Article 32?"],
+answer:"Article 32 allows citizens to approach the Supreme Court for enforcement of fundamental rights."
+},
+
+{
+keywords:["What is the Supreme Court of India?"],
+answer:"The Supreme Court is the highest judicial authority in India."
+},
+
+{
+keywords:["What is a High Court?"],
+answer:"High Courts operate at the state level and hear appeals from lower courts."
+},
+
+{
+keywords:["What is a District Court?"],
+answer:"District courts handle civil and criminal cases at the local level."
+},
+
+{
+keywords:["How can I check my court case status?"],
+answer:"You can check your case status on the eCourts portal."
+},
+
+{
+keywords:["What is bail?"],
+answer:"Bail allows temporary release of an accused person from custody while the trial continues."
+},
+
+{
+keywords:["What is anticipatory bail?"],
+answer:"Anticipatory bail protects a person from arrest in case of false allegations."
+},
+
+{
+keywords:["What is a cheque bounce case?"],
+answer:"Cheque bounce cases are filed under Section 138 of the Negotiable Instruments Act."
+},
+
+{
+keywords:["How can I apply for a passport?"],
+answer:"Passport applications can be submitted online through the Passport Seva portal."
+},
+
+{
+keywords:["How can I apply for a PAN card?"],
+answer:"PAN cards can be applied online through NSDL or UTIITSL websites."
+},
+
+{
+keywords:["How can I update Aadhaar details?"],
+answer:"Aadhaar details can be updated online or at Aadhaar Seva Kendras."
+},
+
+{
+keywords:["What is GST registration?"],
+answer:"GST registration is required for businesses crossing certain turnover thresholds."
+},
+
+{
+keywords:["How can I register a company in India?"],
+answer:"Companies can be registered through the Ministry of Corporate Affairs portal."
+},
+
+{
+keywords:["What is RERA?"],
+answer:"RERA protects home buyers and regulates real estate developers."
+},
+
+{
+keywords:["What should I do if a builder delays possession?"],
+answer:"Buyers can file complaints under the RERA Act."
+},
+
+{
+keywords:["What is stamp duty in property registration?"],
+answer:"Stamp duty is a government tax paid during property registration."
+},
+
+{
+keywords:["How can I check land ownership records?"],
+answer:"Land records can be checked through state land record portals."
+},
+
+{
+keywords:["What are tenant rights in India?"],
+answer:"Tenant rights are protected under state Rent Control Acts."
+},
+
+{
+keywords:["What should I do after a road accident?"],
+answer:"Ensure safety, seek medical help, inform police, and notify insurance."
+},
+
+{
+keywords:["How can I claim accident compensation?"],
+answer:"Compensation claims can be filed through the Motor Accident Claims Tribunal."
+},
+
+{
+keywords:["What is the punishment for drunk driving?"],
+answer:"Drunk driving penalties include fines, license suspension, or imprisonment."
+},
+
+{
+keywords:["What is rash driving law in India?"],
+answer:"Rash driving is punishable under IPC Section 279."
+},
+
+{
+keywords:["What is hit and run law?"],
+answer:"Victims may receive compensation even if the offender is unknown."
+},
+
+{
+keywords:["What is the national emergency provision?"],
+answer:"Article 352 allows declaration of national emergency."
+},
+
+{
+keywords:["What is President's Rule?"],
+answer:"Article 356 allows the President to impose rule in a state if governance fails."
+},
+
+{
+keywords:["What is financial emergency?"],
+answer:"Article 360 allows declaration of financial emergency in India."
+},
+
+{
+keywords:["What is the Preamble of the Constitution?"],
+answer:"The Preamble introduces the Constitution and states its goals like justice, liberty, equality, and fraternity."
+},
+
+{
+keywords:["What is liberty in the Constitution?"],
+answer:"Liberty means freedom of thought, expression, belief, faith, and worship."
+},
+
+{
+keywords:["What is equality in the Constitution?"],
+answer:"Equality means equal status and opportunities for all citizens."
+},
+
+{
+keywords:["What is fraternity in the Constitution?"],
+answer:"Fraternity promotes unity and brotherhood among citizens."
+}
+
+];
+
+</script>
